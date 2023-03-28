@@ -1,0 +1,8 @@
+.input_container{
+    height:100%;
+}
+
+#input{
+    height: calc(100% - 39.5px) !important;
+    width: 40vw !important;
+}

@@ -1,0 +1,237 @@
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #18191a;
+}
+
+.videoContainer{
+    height: calc(100vh - 65px);
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+    /* align-items:stretch; */
+    
+}
+
+/* .ide{
+    position: "absolute" !important;
+} */
+
+.videoSubContainer{
+    position: relative;
+    width: 100%;
+    transition: all .875s;
+}
+
+
+.messageContainer{
+    width: 0%;
+    background-color: #36393a;
+    opacity: 0;
+    border-radius: 20px;
+    transition: all .300s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.enter{
+    z-index: 0;
+   width: 40%;
+   margin-left: 20px;
+   opacity: 1;
+
+}
+
+.messageHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 2px solid #18191a;
+}
+
+.closeChat{
+    width: 1.1rem;
+    cursor: pointer;
+}
+
+.chatHeading{
+    color:antiquewhite;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.chatMainContainer{
+    height: 100%;
+    width: 100%;
+    padding: 0 10px 10px 10px;
+    overflow-y:auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chatFooterContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 2px solid #18191a;
+}
+
+.chatInput{
+    width: 83%;
+    font-size: 1rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    color: white;
+    background-color: #18191a79;
+    margin-right: 20px;
+}
+
+.btnSend{
+    width: 2.8rem;
+    padding: 10px;
+    background-color: rgb(2, 164, 145);
+    border-radius: 100%;
+    border: none;
+}
+
+.noUserVideo{
+    background-color: #36393a9d;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    right: 0px;
+    bottom: 0px;
+}
+
+.noUserVideoIcon{
+    width: 10rem;
+}
+.noPeerVideo{
+   position: absolute;
+   z-index: 1;
+   top: 0; 
+}
+
+.userVideo,.peerVideo{
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+.userVideo{
+    transform: rotateY(180deg);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transition: all 1s;
+}
+
+.changePeerVideo{
+    object-fit:fill;
+}
+
+.changeUserVideo{
+   
+    width: 20%;
+    height: 25%;
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #36393a;
+}
+.changeUserVideo>.noUserVideoIcon{
+    width: 5rem;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    height: 60px;
+    padding:0 20px 10px 20px;
+}
+
+.controlContainer{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly;
+    width: 20%; */
+
+}
+
+.rightPartFooter{
+    /* width:7%; */
+    display: flex ;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.leftPartFooter{
+    color:antiquewhite;
+    font-size: 1rem;
+}
+
+.btnShareScreen,.btnMute,.btnHideCamera,.btnLeaveCall,.btnChat,.btnIde{
+    width: 2.8rem;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #36393a;
+    cursor:pointer;
+    margin-left: 15px;
+}
+.btnLeaveCall{
+    padding:5px 20px;
+    width: 4.5rem;
+    background-color: rgba(207, 33, 33, 0.896);
+}
+
+.red{
+    background-color: rgba(207, 33, 33, 0.896);
+}
+
+.ideContainer{
+    position: absolute;
+    z-index: 1;
+}
+
+.btnIde{
+    position: relative;
+    z-index:2;
+}
+
+
+
+.changeBtnIde{
+    background-color: rgb(2, 164, 145);
+}
+
+
+/* 0	209	186	 */
+/* #4dcfbc */
+.btnDisable{
+    opacity: .5;
+    cursor:not-allowed;
+}
+
+.onMessage{
+    background-color: #30AADD;
+}
